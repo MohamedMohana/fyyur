@@ -1,0 +1,25 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Fyyur{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-6">
+		<h1>Fyyur 🔥</h1>
+		<p class="lead">Where musical performers meet musical locations.</p>
+		<h3>
+			<a href="/locations"><button class="btn btn-primary btn-lg">Find a location</button></a>
+			<a href="/locations/create"><button class="btn btn-default btn-lg">Post a location</button></a>
+		</h3>
+		<h3>
+			<a href="/performers"><button class="btn btn-primary btn-lg">Find an performer</button></a>
+			<a href="/performers/create"><button class="btn btn-default btn-lg">Post an performer</button></a>
+		</h3>
+		<p class="lead">Publicize about your event for free.</p>
+		<h3>
+			<a href="/events/create"><button class="btn btn-default btn-lg">Post a event</button></a>
+		</h3>
+	</div>
+	<div class="col-sm-6 hidden-sm hidden-xs">
+		<img id="front-splash" src="{{ url_for('static',filename='img/front-splash.jpg') }}" alt="Front Photo of Musical Band" />
+	</div>
+</div>
+{% endblock %}
